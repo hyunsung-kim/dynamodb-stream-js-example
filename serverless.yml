@@ -1,0 +1,56 @@
+service: dynamodb-stream-js-example
+
+provider:
+  name: aws
+  runtime: nodejs12.x
+  stage: dev
+  region: ap-northeast-2
+
+custom:
+  dynamodb:
+  # If you only want to use DynamoDB Local in some stages, declare them here
+    stages:
+      - dev
+    start:
+      port: 8000
+      inMemory: true
+      heapInitial: 200m
+      heapMax: 1g
+      migrate: true
+      seed: true
+      convertEmptyValues: true
+
+plugins:
+  - serverless-dynamodb-local
+  - serverless-plugin-offline-dynamodb-stream
+  - serverless-offline 
+
+functions:
+  hello:
+    handler: health.handle
+    events:
+      - http:
+          path: health
+          method: get
+  create:
+    handler: create.handle
+    events:
+      - http:
+          path: users/create
+          method: post
+  delete:
+    handler: delete.handle
+    events:
+      - http:
+          path: users/delete
+          method: post
+  get:
+    handler: get.handle
+    events:
+      - http:
+          path: users
+          method: get
+
+
+# you can add CloudFormation resource templates here
+resources: ${file(resources.yml)}

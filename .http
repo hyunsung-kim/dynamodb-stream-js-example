@@ -1,0 +1,21 @@
+###
+GET http://localhost:3000/dev/users?email=test@gamil.com
+
+###
+POST http://localhost:3000/dev/users/create
+Content-Type: application/json
+
+{
+    "email": "test@gamil.com",
+    "pwd": 1111
+}
+
+
+###
+
+POST http://localhost:3000/dev/users/delete
+Content-Type: application/json
+
+{
+    "email": "test1@gamil.com"
+}

@@ -1,0 +1,27 @@
+{
+  "name": "dynamodb-stream-js-example",
+  "version": "1.0.0",
+  "description": "<p align=\"center\">   <a href=\"\" target=\"blank\"><img src=\"river.png\" width=\"200\" height=\"200\" alt=\"Civet Logo\" /></a> </p>",
+  "main": "handler.js",
+  "scripts": {
+    "local": "sls offline",
+    "run:local:dynamodb": "sls dynamodb start &"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hyunsung-kim/dynamodb-stream-js-example.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hyunsung-kim/dynamodb-stream-js-example/issues"
+  },
+  "homepage": "https://github.com/hyunsung-kim/dynamodb-stream-js-example#readme",
+  "dependencies": {
+    "aws-sdk": "^2.719.0",
+    "ppjson": "^1.4.0",
+    "serverless-dynamodb-local": "^0.2.39",
+    "serverless-offline": "^6.5.0",
+    "serverless-plugin-offline-dynamodb-stream": "^1.0.19"
+  }
+}
