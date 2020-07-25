@@ -12,7 +12,7 @@
 ## Getting Started
 테스트 프로그램의 데이터 흐름은 아래와 같이 동작한다. 가장 먼저 데이터를 REST API를 통하여 DB에 입력하고 해당 테이블에서 다이나모 스트림을 통하여 람다를 트리거한다. 람다에서는 해당 새롭게 생성한 아이템에 한하여 속성들을 찾아서 추가하여 준다.
 
-<a href="" target="blank"><img src="event_stream_overview.png" height="400" alt="Flow Chart" /></a>
+<a href="" target="blank"><img src="event_stream_overview.png" height="200" alt="Flow Chart" /></a>
 
 
 ### Scaffolding Serverless project
