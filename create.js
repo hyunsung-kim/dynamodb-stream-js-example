@@ -7,7 +7,8 @@ module.exports.handle = async (event) => {
     TableName: 'usersTable',
     Item: {
       "email": content.email,
-      "password": content.pwd
+      "password": content.pwd,
+      "region": content.region || "ap-northeast-2"
     }
   };
   const result = await docClient.put(params).promise();
