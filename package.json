@@ -18,7 +18,7 @@
   },
   "homepage": "https://github.com/hyunsung-kim/dynamodb-stream-js-example#readme",
   "dependencies": {
-    "aws-sdk": "^2.719.0",
+    "aws-sdk": "^2.814.0",
     "ppjson": "^1.4.0",
     "serverless-dynamodb-local": "^0.2.39",
     "serverless-offline": "^6.5.0",
