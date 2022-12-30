@@ -20,7 +20,7 @@
   "dependencies": {
     "aws-sdk": "^2.719.0",
     "ppjson": "^1.4.0",
-    "serverless-dynamodb-local": "^0.2.39",
+    "serverless-dynamodb-local": "^1.0.2",
     "serverless-offline": "^6.5.0",
     "serverless-offline-dynamodb-streams": "^4.0.1",
     "serverless-plugin-offline-dynamodb-stream": "^1.0.19"
